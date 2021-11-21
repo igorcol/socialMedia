@@ -1,0 +1,54 @@
+/* The component style is inserted here. */
+
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: scroll ;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(209, 209, 209);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1877f2;
+    border-radius: 100px;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+}
+
+.sidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all ease 100ms;
+    font-weight: bold;
+}
+.sidebarListItem.active {
+    font-size: 20px !important;
+}
+.sidebarListItem:hover {
+    font-size: 20px !important;
+}
+
+.sidebarIcon {
+    margin-right: 10px;
+}
+
+
+.sidebar hr {
+    margin: 20px 0;
+}
+
